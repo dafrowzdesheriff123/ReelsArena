@@ -3,41 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReelsArena – Login</title>
+  <title>ReelsArena - Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <h2>Welcome Back to <span>ReelsArena</span></h2>
-      <p class="subtitle">Login to your account</p>
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="ReelsAreena Logo">
+        <h1>ReelsArena</h1>
+      </div>
 
-      <form id="loginForm">
+      <h2>Welcome Back</h2>
+
+      <form id="login-form">
         <div class="input-group">
-          <input type="email" id="loginEmail" required>
-          <label for="loginEmail">Email</label>
+          <input type="email" placeholder="Email" required>
         </div>
-
         <div class="input-group">
-          <input type="password" id="loginPassword" required>
-          <label for="loginPassword">Password</label>
+          <input type="password" placeholder="Password" required>
         </div>
 
         <button type="submit" class="btn">Login</button>
+
+        <div class="divider">or continue with</div>
+
+        <button type="button" class="google-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+          Sign in with Google
+        </button>
+
+        <p class="redirect">Don’t have an account? 
+          <a href="index.html" class="link">Create one</a>
+        </p>
       </form>
-
-      <div class="divider">
-        <span>or continue with</span>
-      </div>
-
-      <button class="google-btn" id="googleLogin">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
-        Sign in with Google
-      </button>
-
-      <p class="login-link">
-        Don’t have an account? <a href="index.html">Create one</a>
-      </p>
     </div>
   </div>
 </body>
