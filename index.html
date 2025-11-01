@@ -3,61 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReelsArena – Sign Up</title>
+  <title>ReelsArena - Sign Up</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <h2>Reels<span>Arena</span></h2>
-      <p class="subtitle">Create your account</p>
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="ReelsAreena Logo">
+        <h1>ReelsArena</h1>
+      </div>
 
-      <form id="signupForm">
+      <h2>Create Account</h2>
+
+      <form id="signup-form">
         <div class="input-group">
-          <input type="text" id="username" required>
-          <label for="username">Username</label>
+          <input type="text" placeholder="Username" required>
         </div>
-
         <div class="input-group">
-          <input type="tel" id="phone" required>
-          <label for="phone">Phone Number</label>
+          <input type="tel" placeholder="Phone Number" required>
         </div>
-
         <div class="input-group">
-          <input type="email" id="email" required>
-          <label for="email">Email</label>
+          <input type="email" placeholder="Email" required>
         </div>
-
         <div class="input-group">
-          <input type="password" id="password" required>
-          <label for="password">Password</label>
+          <input type="password" placeholder="Password" required>
         </div>
-
         <div class="input-group">
-          <input type="password" id="confirmPassword" required>
-          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" placeholder="Confirm Password" required>
         </div>
 
         <button type="submit" class="btn">Create Account</button>
+
+        <div class="divider">or continue with</div>
+
+        <button type="button" class="google-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+          Sign in with Google
+        </button>
+
+        <p class="redirect">Already have an account? 
+          <a href="login.html" class="link">Login here</a>
+        </p>
       </form>
-
-      <div class="divider">
-        <span>or continue with</span>
-      </div>
-
-      <button class="google-btn" id="googleSignIn">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
-        Sign in with Google
-      </button>
-
-      <p class="login-link">
-        Already have an account? <a href="login.html">Login here</a>
-      </p>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
